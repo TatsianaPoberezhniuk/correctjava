@@ -1,6 +1,5 @@
 package vehicles;
 
-import java.util.Objects;
 
 public class KenworthCar extends TruckCar {
 
@@ -20,7 +19,7 @@ public class KenworthCar extends TruckCar {
         return "KenworthCar{" +
                 "name='" + name + '\'' +
                 '}' + "price=" + super.getPrice()
-                + "fuelConcumption=" + getFuelConsumption();
+                + "fuelConcumption=" + super.getFuelConsumption();
     }
 
     @Override

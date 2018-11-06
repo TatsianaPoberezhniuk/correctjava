@@ -1,6 +1,5 @@
 package vehicles;
 
-import java.util.Objects;
 
 public class ChevroletCar extends PassengerCar{
 
@@ -20,7 +19,7 @@ public class ChevroletCar extends PassengerCar{
         return "ChevroletCar{" +
                 "name='" + name + '\'' +
                 '}' + "price=" + super.getPrice()
-                + "fuelConcumption=" + getFuelConsumption();
+                + "fuelConcumption=" + super.getFuelConsumption();
     }
 
     @Override

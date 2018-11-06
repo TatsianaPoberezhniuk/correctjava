@@ -1,13 +1,13 @@
 package vehicles;
 
 
-public class ChevroletCar extends PassengerCar{
+public class ChevroletCar extends PassengerCar {
 
     private String name = "ChevroletTahoe";
 
 
     public ChevroletCar(Integer price, Integer fuelConsumption) {
-                super(price, fuelConsumption);
+        super(price, fuelConsumption);
     }
 
     public ChevroletCar() {
@@ -27,7 +27,7 @@ public class ChevroletCar extends PassengerCar{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ChevroletCar chevroletCar = (ChevroletCar) o;
-        return ! (name != null ? !name.equals(chevroletCar.name) : chevroletCar.name != null);
+        return !(name != null ? !name.equals(chevroletCar.name) : chevroletCar.name != null);
         //Objects.equals(name, that.name);
     }
 

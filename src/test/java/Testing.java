@@ -1,5 +1,5 @@
 
-import org.junit.Test;
+import org.junit.*;
 import vehicles.ChevroletCar;
 import vehicles.Driving;
 import vehicles.KenworthCar;
@@ -28,14 +28,12 @@ public class Testing {
         vehiclesPark.setVehicles(vehicles);
 
 
-
-
         System.out.println("Total Price:" + vehiclesPark.getTotalalPrice());
 
         Collections.sort(vehicles, new VehicleComparator());
 
         System.out.println("By Fuel Consumption");
-        for (Driving v : vehicles){
+        for (Driving v : vehicles) {
             System.out.println(v.getFuelConsumption());
         }
     }

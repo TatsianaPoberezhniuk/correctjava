@@ -2,8 +2,8 @@
 import org.junit.Test;
 import vehicles.ChevroletCar;
 import vehicles.Driving;
-//import vehicles.IntegerComparator;
 import vehicles.KenworthCar;
+import vehiclespark.VehicleComparator;
 import vehiclespark.VehiclesPark;
 
 
@@ -23,24 +23,24 @@ public class Testing {
         List<Driving> vehicles = new ArrayList<Driving>();
         vehicles.add(new ChevroletCar());
         vehicles.add(new KenworthCar());
-
+        vehicles.add(new ChevroletCar());
+        vehicles.add(new KenworthCar());
         vehiclesPark.setVehicles(vehicles);
 
-        //Collections.sort(driving, new IntegerComparator());
-        //System.out.println("Sorted");
-        //printList(vehicles);
+
 
 
         System.out.println("Total Price:" + vehiclesPark.getTotalalPrice());
 
+        Collections.sort(vehicles, new VehicleComparator());
 
-        //public void CountingFuelConsumption() {
-
+        System.out.println("By Fuel Consumption");
+        for (Driving v : vehicles){
+            System.out.println(v.getFuelConsumption());
+        }
     }
 }
-        //Collections.sort(vehicles, new IntegerComparator());
-    //System.out.println("Sorted");
-    //printVehicles(vehicles);
+
 
 
 

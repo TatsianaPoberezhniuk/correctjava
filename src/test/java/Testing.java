@@ -37,9 +37,8 @@ public class Testing {
             System.out.println(v.getFuelConsumption());
         }
     }
+
 }
-
-
 
 
 
